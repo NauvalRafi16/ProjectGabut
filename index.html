@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- CSS -->
+    <style>
+    body {
+        background-color: coral;
+        text-align: center;
+    }
+    h1 {
+        font-variant:inherit;
+        font-weight: bold;
+    }
+    #button {
+        font-variant:inherit;
+        font-weight: bold;
+        border-radius: 10px;
+        box-shadow: 3px 3px black;
+        width: 200px;
+        height: 85px;
+    }
+    #btn {
+        font-variant:inherit;
+        font-weight: bold;
+        border-radius: 10px;
+        box-shadow: 3px 3px black;
+        width: 200px;
+        height: 85px;
+    }
+    .container {
+        margin: 100px;
+        background-color: beige;
+        border-radius: 12px;
+        box-shadow: 10px 10px brown;
+
+    }
+    .n {
+        margin: 30px;
+    }
+    
+    </style>
+    <!-- Js -->
+    <script type="text/javascript">
+    function myfunction(txt)  
+        {  
+        alert(txt)  
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <br> <br> <br> <br> <br> <br>
+    <h1>SELAMAT DATANG DI WEBSITE BERHADIAH</h1>
+    <H1>LUCKY TAP</H1>
+    <p>Berhadiah Mobil Jika Beruntung!!!</p> <br> <br> <br> <br> <br> <br>
+    <h3>PILIH SALAH SATU</h3> 
+    <div class="n">
+
+    <input style="margin: 10px;" id="btn" type="button"  
+    value="Nomor 1">  
+
+    <input style="margin: 10px;" id="button" type="button"  
+    onclick="myfunction('ZONK')"  
+    value="Nomor 2">
+
+    <input style="margin: 10px;" id="button" type="button"  
+    onclick="myfunction('Maaf Anda Kurang Beruntung Coba Lagi')"  
+    value="Nomor 3">
+
+    <input style="margin: 10px;" id="button" type="button"  
+    onclick="myfunction('Pftt Zonk Dek')"  
+    value="Nomor 4">
+
+    <input style="margin: 10px;" id="button" type="button"  
+    onclick="myfunction('Tangan Ampas Ini juga zonk')"  
+    value="Nomor 5">
+
+    <input style="margin: 10px;" id="button" type="button"  
+    onclick="myfunction('Selamat Anda Mendapat Hadiah Mobil GT')"  
+    value="Nomor 6">
+
+    <input style="margin: 10px;" id="button" type="button"  
+    onclick="myfunction('ZONK')"  
+    value="Nomor 7">
+
+    <input style="margin: 10px;" id="button" type="button"  
+    onclick="myfunction('Maaf Anda Kurang Beruntung Coba Lagi')"  
+    value="Nomor 8">
+
+    <input style="margin: 10px;" id="button" type="button"  
+    onclick="myfunction('Pftt Zonk Dek')"  
+    value="Nomor 9">
+
+    <input style="margin: 10px;" id="button" type="button"  
+    onclick="myfunction('Tangan Ampas Ini juga zonk')"  
+    value="Nomor 10">
+    <script src="dist/sweetalert2.all.min.js"></script>
+    <script>
+        const btn = document.getElementById('btn');
+        btn.addEventListener('click', function(){
+            Swal.fire({
+              title: 'congratulations',
+              text: "KAMU BERUNTUNG KARENA TELAH MENDAPATKAN HADIAH BERUPA 1 UNIT MOBIL GT",
+              icon: 'success',
+              showCancelButton: true,
+              confirmButtonColor: '#3085d6',
+              cancelButtonColor: '#d33',
+              confirmButtonText: 'OKE'
+            }).then((result) => {
+              if (result.isConfirmed) {
+                Swal.fire(
+                  'AYO',
+                  'CLAIM HADIAH SEKARANG JUGA',
+                  'success'
+                )
+              }
+            })
+                        })
+       </script>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+</div>
+</div>
+</body>
+</html>
